@@ -1,0 +1,127 @@
+// Q1 sol
+
+import java.util.Scanner;
+public class Test01 {
+ public static void main(String[]args){
+  Scanner scan = new Scanner(System.in);
+  
+  int input = 0;
+  int a=0, b=0, c=0, d=0, f=0;
+  
+  while(input!=-99){
+   
+   System.out.print("점수를 입력하세요(끝낼려면 -99) :");
+   input = scan.nextInt();
+   
+   if(input>=90 && input<=100){
+    System.out.println("A학점 입니다.");
+    a++;
+   }else if(input>=80){
+    System.out.println("B학점 입니다.");
+    b++;
+   }else if(input>=70){
+    System.out.println("C학점 입니다.");
+    c++;
+   }else if(input>=60){
+    System.out.println("D학점 입니다.");
+    d++;
+   }else if(input>=0){
+    System.out.println("F학점 입니다.");
+    f++;
+   }else
+    System.out.println("다시 입력하세요");
+   
+  }
+  
+  System.out.println("A학점 수 : "+a);
+  System.out.println("B학점 수 : "+b);
+  System.out.println("C학점 수 : "+c);
+  System.out.println("D학점 수 : "+d);
+  System.out.println("F학점 수 : "+f);
+  
+  System.out.println("이상입니다.");
+ }
+}
+
+-------------------------------------------------
+// Q2 sol
+import java.io.*;
+import java.util.*;
+public class Test02 {
+ public static void main(String []args) throws IOException{
+  Scanner scan = new Scanner(System.in);
+  
+  int first = 0, second = 0;
+  float fSum =0, sSum=0;
+  char yn ='y';
+   
+  while(yn=='y'|| yn=='Y'){
+   System.out.print("보고할 구가 있나요(Y/N): ");
+   yn = (char)System.in.read();
+   System.in.read();
+   System.in.read();
+   
+   if(yn=='y'|| yn=='Y'){
+    System.out.print("첫번째 후보가 그구에서 얻은 득표수를 입력하세요: ");
+    first = scan.nextInt();
+    
+    System.out.print("두번째 후보가 그구에서 얻은 득표수를 입력하세요: ");
+    second = scan.nextInt();
+    
+    fSum +=first;
+    sSum +=second;
+   }else if(yn=='n'|| yn=='N'){
+    System.out.printf("첫번째 후보의 총 득표수는 %d 이고 득표율은 %.2f 입니다. \n",
+      (int)fSum,(fSum/(fSum+sSum))*100);
+    System.out.println("두번째 후보의 총 득표수는 "+(int)sSum +"이고 득표율은"+
+                        (sSum/(fSum+sSum))*100+"입니다.");
+   }else{
+    System.out.print("y,n으로 다시 입력하세요.");
+    yn='y';
+   }
+  }
+ }
+}
+----------------------------------------------------
+// Q3 sol
+interface Countable {
+	void count();
+}
+
+class Bird implements Countable {
+	String name;
+
+	Bird(String name) {
+		this.name = name;
+	}
+
+	public void count() {
+		System.out.println(name + "가 2마리 있다.");
+	}
+
+	void fly() {		
+	}
+}
+
+class Tree implements Countable {
+	String name;
+
+	Tree(String name) {
+		this.name = name;
+	}
+
+	public void count() {
+		System.out.println(name + "가 5그루 있다.");
+	}
+
+	void ripen() {
+	}
+}
+public class CountableTest {
+	public static void main(String[] args) {
+		Countable[] m = { new Bird("뻐꾸기"), new Bird("독수리"), new Tree("사과 나무"), new Tree("복숭아 나무") };
+
+		for (Countable e : m)
+			e.count();
+	}
+}
