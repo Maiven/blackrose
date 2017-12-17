@@ -16,7 +16,7 @@ AI is closely connected with search algorithms, genetic programming, and the use
 
 Another reason for using Java in AI programming is the vast amount of tutorials on the Internet. Just type “how to program artificial intelligence in Java” and you’ll get a lot of pages to choose from. Java is versatile. It’s used for making multi-robot systems, sensor networks, and machine learning suites. Let’s have a look at the best examples of projects created with a help of Java.
 
-These projects are created with Java
+[These projects are created with Java]
 WEKA Machine Learning Suite in an open-source list of algorithms that are used for developing machine learning techniques. These algorithms are oriented on machine learning and data mining. This set can carry out the following tasks:
 
 -feature selection
@@ -25,15 +25,15 @@ WEKA Machine Learning Suite in an open-source list of algorithms that are used f
 -data filtering
 Weka is used for business intelligence, providing companies with facilitated data mining and predictive analytics.
 
-Robocode
+[Robocode]
 Those who want to learn more about Java, robotics, and AI, should try out Robocode. It’s an open-source Java-based game that allows users learn principles of Java programming. Here one can create a robot, program its strategy, develop a programming intelligence. Having a simple robot code, a developer may build a robot behavior that’ll be more sophisticated.
 
 Here are good examples of using Java in AI programming.
 
-JOONE Neural Engine
+[JOONE Neural Engine]
 This is a multi-platform that allows creating, training, and testing neural networks. JOONE includes linkable components connected by a graphical editor and controlled with scripts. This neural network allows developers use distributed training environment. The main platform features include supervised and unsupervised learning, scripting capability, and mechanisms for data preprocessing.
 
-Polar mobile robots
+[Polar mobile robots]
 Using Java API, developers have built mobile robots for Greenland and Antarctica. GUI was developed with Java Swing. As Swing is ease to use and can interface directly with components, this platform has been chosen for providing the means of robot control and monitoring it.
 
 So these are several examples of developers who proved that they know how to make an AI in Java. If you are looking for Java chatterbots, you should definitely read more about A.L.I.C.E. This abbreviation stands for Artificial Linguistic Internet Computer Entity. This Java web bot is also called Alice or Alice bot. Being one of the best natural language processing chatterbots, this Java bot has won the Loebner Prize three times. Alice was created by Richard Wallace in 1995. Three years after it was rewritten in Java. Nowadays Alice uses XML Schema.
@@ -46,3 +46,5 @@ Beginners can use free open-source codes for Java chatbots. There are already ma
 
 If you want to find out more about Java AI, chatbots, or ways to use this information for boosting your business, our team is always ready to help. Get detailed guides on using AI in your business. Let the future start today!
 
+Tetiana Shevchenko
+July 26, 2016 in Artificial Intelligence, chatbots
